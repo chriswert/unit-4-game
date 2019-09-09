@@ -21,3 +21,54 @@ body {
 .inst {
     font-size: 40px
 }
+
+.randomNumber {
+    height:150px;
+    width: 200px;
+    padding: 20px;
+    background-color: rgb(64, 78, 92);
+    margin-bottom: 30px;
+ }
+
+ .winLosses {    
+    height: 150px;
+    width: 100px;
+    background-color: white;
+    margin-bottom: 30px;    
+}
+
+ .kirk {
+    width: 175px;
+    height: 175px;
+}
+ .picard {
+    width: 175px;
+    height: 175px;
+ }
+
+ .sisko {
+    width: 175px;
+    height: 175px;
+ }
+
+ .janeway {
+    width: 175px;
+    height: 175px;
+ }
+
+ .score {
+     height:50px;
+     width: 300px;
+     background-color: rgb(64, 78, 92);
+     margin-top: 30px;
+     margin-bottom: 30px;
+ }
+
+ .totalScore {
+    height: 150px;
+    width: 300px;
+    background-color: rgb(64, 78, 92);
+}
+
+
+ 
