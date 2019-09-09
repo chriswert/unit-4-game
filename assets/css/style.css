@@ -1,0 +1,23 @@
+body {
+    background-image: url("/assets/images/star\ trek\ insignia.jpg");
+    background-repeat: no-repeat;    
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    font-size: 80px;
+    color: lightslategrey;
+    font-family: Luminari, fantasy;
+}
+
+.alert {
+    background-color: rgb(64, 78, 92);
+    border-color: black;
+    color: white;
+    font-family: OCR A Std, monospace;
+}
+ 
+.inst {
+    font-size: 40px
+}
