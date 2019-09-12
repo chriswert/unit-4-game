@@ -3,13 +3,12 @@ $(document).ready(function(){
 //Global Var
 
 var randomNumber;
-var winLosses;
-var kirk;
-var picard;
-var sisko;
-var janeway;
+var win;
+var Losses;
 var score;
-var totalScore;
+
+
+
 
 // write function to select a random number between 20 - 135.
 
@@ -21,33 +20,26 @@ let num = randomNumber();
 console.log(num); 
 
 // display random number on web page
-$('.randomNumber').text(num);
+$('.randomNumGen').text(num);
+
+//create an onClick function for the buttons
+
 
 // write function to select a random number for each button
 
-function randomNumCaptains() {
-    return {
-        kirk: {
-            points: Math.floor(Math.random() * 15) + 1,
-            imageUrl: "assets/images/kirk.jpg"
-        },
-        picard: {
-            points: Math.floor(Math.random() * 15) + 1,
-            imageUrl: "assets/images/picard.jpg"
-        },
-        sisko: {
-            points: Math.floor(Math.random() * 15) + 1,
-            imageUrl: "assets/images/sisko.jpg"
-        },
-        janeway: {
-            points: Math.floor(Math.random() * 15) + 1,
-            imageUrl: "assets/images/janeway.jpg"
-        }
-    };
-   
+for (var i = 0; i < 4; i++){
+    var random = Math.floor(Math.random() * 18) + 1;
+    console.log(random)
+
+    var captainButton = $(this);
+    captainButton.attr({
+        "data-random": random
+    })
 }
-let captains = randomNumCaptains();
-console.log(captains);
+
+//function beginGame() {
+   
+
 
 // reset random number after win or loss
 
