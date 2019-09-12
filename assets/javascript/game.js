@@ -14,14 +14,14 @@ var totalScore;
 // write function to select a random number between 20 - 135.
 
 function randomNumber() {
-   return Math.floor(Mth.random() * 115) + 20;   
+   return Math.floor(Math.random() * 115) + 20;   
 }
-console.log();
+
+let num = randomNumber();
+console.log(num); 
 
 // display random number on web page
-
-
-
+$('.randomNumber').text(num);
 
 // write function to select a random number for each button
 
@@ -44,8 +44,10 @@ function randomNumCaptains() {
             imageUrl: "assets/images/janeway.jpg"
         }
     };
-    console.log();
+   
 }
+let captains = randomNumCaptains();
+console.log(captains);
 
 // reset random number after win or loss
 
