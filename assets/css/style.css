@@ -10,7 +10,7 @@ body {
     color: lightslategrey;
     font-family: Luminari, fantasy;
     text-shadow: -5px -5px rgb(71, 71, 71);
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .alert {
@@ -35,9 +35,8 @@ body {
 }
 
 .randomNumber {
-    height:150px;
+    height:125px;
     width: 200px;
-   
     background-color: rgb(92, 120, 148);
     margin-bottom: 30px; 
     border: 4px solid;
@@ -60,12 +59,11 @@ body {
  }
 
  .winLosses {    
-    height: 150px;
+    height: 125px;
     width: 150px;
     background-color: rgb(189, 189, 189);
     margin-bottom: 30px;
     border: 4px solid; 
-   
     border-radius: 5px; 
     box-shadow: -5px -5px rgb(71, 71, 71);   
 }
@@ -81,12 +79,14 @@ body {
     font-style: bold;
     font-family: OCR A Std, monospace;
     font-size: 20px;
+    margin: 5px;
 }
 .losses {
     text-decoration: underline;
     font-style: bold;
     font-family: OCR A Std, monospace;
     font-size: 20px;
+    margin: 5px;
 }
 
  .kirk {
@@ -117,20 +117,24 @@ body {
      width: 300px;
      background-color: rgb(92, 120, 148);
      margin-top: 30px;
-     margin-bottom: 30px;
+     margin-bottom: 15px;
      border: 4px solid;
      border-radius: 5px;
      box-shadow: -5px -5px rgb(71, 71, 71);
  }
 
  .totalScore {
-    height: 150px;
+    height: 125px;
     width: 300px;
     background-color: rgb(92, 120, 148);
     border: 4px solid;
     border-radius: 5px;
     margin-bottom: 150px;
     box-shadow: -5px -5px rgb(71, 71, 71);
+    text-align: center;
+    font-size: 75px;
+    font-family: OCR A Std, monospace; 
+
 }
 
 h3 {
