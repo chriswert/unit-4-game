@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 var randomNumber;
 var wins = 0;
-var Losses = 0;
+var losses = 0;
 var userScore = 0;
 var game;
 
@@ -37,11 +37,45 @@ function game(){
     num2 = Math.floor(Math.random() * 12 + 1);
     num3 = Math.floor(Math.random() * 12 + 1);
     num4 = Math.floor(Math.random() * 12 + 1);
-    userScore = 0;   
+  
+    return [num1, num2, num3, num4];
+    
+    
 }
-let start = game()
-console.log(num1, num2, num3, num4);
-$('.totalScore').text(userScore);
+function totalScoreAdd(totalScore, captain, scores){
+    //taking captain that was just clicked and taking the value given to the captain and combining it to the total score.
+    var points = scores[captain];
+    var newScore = totalScore + points;
+    console.log(newScore);
+    return newScore;
+}
+let scores = game();
+
+$(".kirk").click(function(){
+    userScore = totalScoreAdd(userScore, 0, scores);
+    $('.totalScore').text(userScore);
+})
+
+$(".picard").click(function(){
+    userScore = totalScoreAdd(userScore, 1, scores);
+    $('.totalScore').text(userScore);
+})
+
+$(".sisko").click(function(){
+    userScore = totalScoreAdd(userScore, 2, scores);
+    $('.totalScore').text(userScore);
+})
+
+$(".janeway").click(function(){
+    userScore = totalScoreAdd(userScore, 3, scores);
+    $('.totalScore').text(userScore);
+})
+
+
+
+
+
+
 
 
 $('captain0').on('click', function(){
